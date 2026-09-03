@@ -162,11 +162,16 @@ rfm-customer-segmentation/
 ```
 
 ```bash
-git clone https://github.com/<user>/DS_Project_Portfolio.git
+git clone https://github.com/LeonZHXing/DS_Project_Portfolio.git
 cd DS_Project_Portfolio/rfm-customer-segmentation
 pip install -r requirements.txt
-# download Online Retail.xlsx from the UCI link above, export to CSV as data/online_retail.csv
+# download the data (see links below) and save it as data/online_retail.csv
 jupyter lab notebooks/rfm_analysis.ipynb
+
+**Data download**
+
+- Original source: [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) (`.xlsx`, export to CSV)
+- Mirror (CSV, ready to use): [Google Drive](https://drive.google.com/file/d/1Q-iw_erFv1jo4EaRkyM4nrxSb2GBro3p/view?usp=drive_link)
 ```
 
 Runs end to end in under two minutes on a laptop. Python 3.10+, no GPU, no cloud account.
