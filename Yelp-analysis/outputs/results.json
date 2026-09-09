@@ -1,0 +1,485 @@
+{
+  "n_business_raw": 174567,
+  "neighborhood_missing_pct": 0.6104,
+  "vegas_spellings": 22,
+  "n_business": 174565,
+  "n_states": 67,
+  "is_open_rate": 0.8404,
+  "restaurant_share": 0.3129,
+  "n_tips": 1098319,
+  "checkin_total": 16648358,
+  "stars_dist": {
+    "1.0": 0.0217,
+    "1.5": 0.0246,
+    "2.0": 0.0534,
+    "2.5": 0.0925,
+    "3.0": 0.1326,
+    "3.5": 0.1835,
+    "4.0": 0.1919,
+    "4.5": 0.142,
+    "5.0": 0.1578
+  },
+  "share_4plus": 0.4917,
+  "n_unique_categories": 1294,
+  "top_categories": {
+    "Restaurants": 54618,
+    "Shopping": 27969,
+    "Food": 24777,
+    "Beauty & Spas": 17014,
+    "Home Services": 16205,
+    "Health & Medical": 14230,
+    "Nightlife": 12154,
+    "Local Services": 11232,
+    "Automotive": 11052,
+    "Bars": 10563,
+    "Event Planning & Services": 9078,
+    "Active Life": 8257,
+    "Fashion": 7018,
+    "Sandwiches": 6345,
+    "Fast Food": 6280
+  },
+  "top1pct_biz_share_reviews": 0.2339,
+  "top5pct_biz_share_reviews": 0.4847,
+  "top10pct_biz_share_reviews": 0.6235,
+  "top20pct_biz_share_reviews": 0.7655,
+  "review_count_median": 8,
+  "pct_biz_ge_100_reviews": 0.0595,
+  "open_rate_by_stars": {
+    "1.0": 0.8915,
+    "1.5": 0.8552,
+    "2.0": 0.8479,
+    "2.5": 0.823,
+    "3.0": 0.7917,
+    "3.5": 0.8104,
+    "4.0": 0.828,
+    "4.5": 0.8631,
+    "5.0": 0.9091
+  },
+  "open_rate_by_review_bucket": {
+    "3-5": 0.8349,
+    "6-20": 0.8308,
+    "21-100": 0.8505,
+    "101-1k": 0.8959,
+    "1k+": 0.9668
+  },
+  "open_rate_restaurant": 0.7396,
+  "open_rate_non_restaurant": 0.8863,
+  "raw_peak_hour_by_metro": {
+    "NV": 2,
+    "AZ": 1,
+    "ON": 23,
+    "EDH": 18,
+    "BW": 17
+  },
+  "pct_checkins_with_tz": 0.9999,
+  "local_peak_hour_by_metro": {
+    "NV": 18,
+    "AZ": 18,
+    "ON": 18,
+    "EDH": 18,
+    "BW": 18
+  },
+  "local_peak_cells": [
+    [
+      "Fri 18:00",
+      280831
+    ],
+    [
+      "Sat 12:00",
+      269189
+    ],
+    [
+      "Sat 18:00",
+      265887
+    ],
+    [
+      "Fri 19:00",
+      263888
+    ],
+    [
+      "Sat 13:00",
+      253572
+    ]
+  ],
+  "local_trough": [
+    [
+      "Wed 3:00",
+      4794
+    ]
+  ],
+  "peak_over_trough": 58.6,
+  "share_by_weekday": {
+    "Mon": 0.1178,
+    "Tue": 0.1185,
+    "Wed": 0.1216,
+    "Thu": 0.1277,
+    "Fri": 0.1652,
+    "Sat": 0.1968,
+    "Sun": 0.1524
+  },
+  "sat_over_tue": 1.66,
+  "share_17_21": 0.3576,
+  "share_11_14": 0.2904,
+  "restaurant_share_of_checkins": 0.5563,
+  "rest_share_12_13": 0.1659,
+  "rest_share_18_20": 0.2836,
+  "nonrest_share_10_17": 0.5534,
+  "pct_biz_with_checkins": 0.8372,
+  "corr_log_checkins_log_reviews": 0.752,
+  "checkins_per_review_median": 1.02,
+  "n_hi_rest": 8008,
+  "n_lo_rest": 4424,
+  "n_tips_hi": 108124,
+  "n_tips_lo": 14950,
+  "tip_len_median": 49,
+  "tokens_hi": 718553,
+  "tokens_lo": 104139,
+  "n_words_scored": 1410,
+  "words_low_star_top15": [
+    "slowest",
+    "mcdonald's",
+    "mcdonalds",
+    "kfc",
+    "disgusting",
+    "worst",
+    "nasty",
+    "airport",
+    "thru",
+    "horrible",
+    "awful",
+    "gross",
+    "terrible",
+    "somewhere",
+    "slow"
+  ],
+  "words_high_star_top15": [
+    "tapas",
+    "bruschetta",
+    "katsu",
+    "bulgogi",
+    "nutella",
+    "dates",
+    "byob",
+    "gelato",
+    "baklava",
+    "omakase",
+    "art",
+    "savory",
+    "goods",
+    "pastries",
+    "torta"
+  ],
+  "logodds_examples": {
+    "slowest": {
+      "count_hi": 7,
+      "count_lo": 139,
+      "log_odds": -4.79
+    },
+    "tapas": {
+      "count_hi": 216,
+      "count_lo": 0,
+      "log_odds": 3.45
+    },
+    "service": {
+      "count_hi": 11358,
+      "count_lo": 1853,
+      "log_odds": -0.12
+    },
+    "dirty": {
+      "count_hi": 106,
+      "count_lo": 172,
+      "log_odds": -2.41
+    },
+    "clean": {
+      "count_hi": 1031,
+      "count_lo": 232,
+      "log_odds": -0.44
+    }
+  },
+  "theme_pct": {
+    "4.5+ star": {
+      "wait / slow": 2.39,
+      "service / staff": 15.26,
+      "price / value": 4.03,
+      "clean / dirty": 1.07,
+      "portion size": 2.42
+    },
+    "<=2.0 star": {
+      "wait / slow": 6.97,
+      "service / staff": 16.42,
+      "price / value": 4.36,
+      "clean / dirty": 3.3,
+      "portion size": 1.42
+    },
+    "ratio_lo_over_hi": {
+      "wait / slow": 2.91,
+      "service / staff": 1.08,
+      "price / value": 1.08,
+      "clean / dirty": 3.1,
+      "portion size": 0.58
+    }
+  },
+  "n_reviews_raw": 5261668,
+  "dup_review_id": 0,
+  "n_reviews": 5261668,
+  "n_reviewers": 1326101,
+  "review_date_range": [
+    "2004-07-22",
+    "2017-12-11"
+  ],
+  "review_len_median": 434,
+  "pct_users_one_review": 0.5274,
+  "pct_users_le_2_reviews": 0.693,
+  "top1pct_users_share_reviews": 0.2362,
+  "top5pct_users_share_reviews": 0.4456,
+  "top10pct_users_share_reviews": 0.5652,
+  "top20pct_users_share_reviews": 0.6971,
+  "n_tip_authors": 271679,
+  "pct_tip_authors_one_tip": 0.572,
+  "top1pct_tip_authors_share": 0.2981,
+  "pct_users_elite": 0.0459,
+  "pct_reviews_by_elite": 0.2381,
+  "elite_vs_regular": {
+    "reviews": {
+      "false": 4008616,
+      "true": 1253052
+    },
+    "median_length": {
+      "false": 374.0,
+      "true": 687.0
+    },
+    "useful_per_review": {
+      "false": 1.009,
+      "true": 2.59
+    },
+    "mean_stars": {
+      "false": 3.71,
+      "true": 3.785
+    },
+    "pct_5star": {
+      "false": 0.471,
+      "true": 0.291
+    },
+    "pct_1star": {
+      "false": 0.169,
+      "true": 0.044
+    }
+  },
+  "length_ratio": 1.84,
+  "useful_ratio": 2.57,
+  "one_star_ratio": 3.81,
+  "polarity_mean": {
+    "false": 0.2437,
+    "true": 0.2219
+  },
+  "polarity_std": {
+    "false": 0.2468,
+    "true": 0.1661
+  },
+  "polarity_se": {
+    "false": 0.00175,
+    "true": 0.00117
+  },
+  "reviews_by_year": {
+    "2004": 14,
+    "2005": 870,
+    "2006": 5669,
+    "2007": 23020,
+    "2008": 61553,
+    "2009": 98288,
+    "2010": 187073,
+    "2011": 290933,
+    "2012": 350381,
+    "2013": 472595,
+    "2014": 678351,
+    "2015": 911487,
+    "2016": 1052916,
+    "2017": 1128518
+  },
+  "gen_meta": {
+    "name": "Gen Korean BBQ House",
+    "city": "Henderson",
+    "state": "NV",
+    "stars": 4.0,
+    "review_count": 1652,
+    "is_open": 1
+  },
+  "gen_total_checkins": 3429,
+  "gen_share_by_weekday": {
+    "Mon": 0.136,
+    "Tue": 0.12,
+    "Wed": 0.11,
+    "Thu": 0.113,
+    "Fri": 0.176,
+    "Sat": 0.181,
+    "Sun": 0.164
+  },
+  "gen_share_17_21": 0.543,
+  "gen_peak": "Fri 19:00",
+  "gen_n_tips": 376,
+  "gen_top_words": [
+    [
+      "great",
+      115
+    ],
+    [
+      "food",
+      108
+    ],
+    [
+      "service",
+      102
+    ],
+    [
+      "good",
+      69
+    ],
+    [
+      "server",
+      65
+    ],
+    [
+      "place",
+      49
+    ],
+    [
+      "best",
+      44
+    ],
+    [
+      "awesome",
+      39
+    ],
+    [
+      "julian",
+      33
+    ],
+    [
+      "ozzy",
+      28
+    ],
+    [
+      "amazing",
+      26
+    ],
+    [
+      "come",
+      23
+    ],
+    [
+      "back",
+      23
+    ],
+    [
+      "love",
+      21
+    ],
+    [
+      "price",
+      20
+    ]
+  ],
+  "gen_n_reviews": 1653,
+  "gen_review_stars_dist": {
+    "1": 0.084,
+    "2": 0.068,
+    "3": 0.076,
+    "4": 0.177,
+    "5": 0.595
+  },
+  "gen_n_neg_reviews": 251,
+  "gen_n_pos_reviews": 1276,
+  "gen_neg_bigrams_top15": [
+    [
+      "never came",
+      18,
+      0
+    ],
+    [
+      "terrible service",
+      10,
+      0
+    ],
+    [
+      "server didn't",
+      9,
+      0
+    ],
+    [
+      "gen restaurant",
+      8,
+      0
+    ],
+    [
+      "speak manager",
+      8,
+      0
+    ],
+    [
+      "another minutes",
+      8,
+      0
+    ],
+    [
+      "open tables",
+      8,
+      0
+    ],
+    [
+      "told wait",
+      11,
+      1
+    ],
+    [
+      "won't back",
+      8,
+      1
+    ],
+    [
+      "took long",
+      7,
+      1
+    ],
+    [
+      "hot tea",
+      8,
+      2
+    ],
+    [
+      "assistant manager",
+      7,
+      2
+    ],
+    [
+      "raw meat",
+      7,
+      2
+    ],
+    [
+      "didn't even",
+      18,
+      7
+    ],
+    [
+      "table next",
+      6,
+      2
+    ]
+  ],
+  "gen_pct_mentioning_wait": {
+    "1-2 star": 0.466,
+    "4-5 star": 0.299
+  },
+  "gen_pct_mentioning_server": {
+    "1-2 star": 0.359,
+    "4-5 star": 0.44
+  },
+  "gen_pct_mentioning_manager": {
+    "1-2 star": 0.195,
+    "4-5 star": 0.021
+  },
+  "gen_pct_mentioning_cold": {
+    "1-2 star": 0.028,
+    "4-5 star": 0.002
+  }
+}
