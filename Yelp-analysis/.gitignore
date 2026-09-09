@@ -1,0 +1,16 @@
+# Data: 4 GB, downloaded separately (see data/README.md)
+data/*
+!data/README.md
+
+# Notebook noise
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+.DS_Store
