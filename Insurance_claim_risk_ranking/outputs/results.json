@@ -1,0 +1,426 @@
+{
+  "n_train": 595212,
+  "n_test": 892816,
+  "n_dev": 476169,
+  "n_hold": 119043,
+  "claim_rate": 0.03645,
+  "neg_pos_ratio": 26.44,
+  "missing_vs_target": {
+    "ps_ind_04_cat": {
+      "missing_rate": 0.0001,
+      "claim_rate_missing": 0.3871,
+      "claim_rate_present": 0.0364,
+      "ratio": 10.6341
+    },
+    "ps_car_01_cat": {
+      "missing_rate": 0.0002,
+      "claim_rate_missing": 0.2976,
+      "claim_rate_present": 0.0364,
+      "ratio": 8.1761
+    },
+    "ps_ind_02_cat": {
+      "missing_rate": 0.0003,
+      "claim_rate_missing": 0.1818,
+      "claim_rate_present": 0.0364,
+      "ratio": 4.9955
+    },
+    "ps_car_09_cat": {
+      "missing_rate": 0.001,
+      "claim_rate_missing": 0.0852,
+      "claim_rate_present": 0.0364,
+      "ratio": 2.3393
+    },
+    "ps_ind_05_cat": {
+      "missing_rate": 0.0097,
+      "claim_rate_missing": 0.0803,
+      "claim_rate_present": 0.036,
+      "ratio": 2.2298
+    },
+    "ps_car_07_cat": {
+      "missing_rate": 0.0192,
+      "claim_rate_missing": 0.0784,
+      "claim_rate_present": 0.0356,
+      "ratio": 2.2
+    },
+    "ps_car_14": {
+      "missing_rate": 0.0718,
+      "claim_rate_missing": 0.0401,
+      "claim_rate_present": 0.0362,
+      "ratio": 1.1102
+    },
+    "ps_car_05_cat": {
+      "missing_rate": 0.4476,
+      "claim_rate_missing": 0.032,
+      "claim_rate_present": 0.0401,
+      "ratio": 0.7982
+    },
+    "ps_reg_03": {
+      "missing_rate": 0.1812,
+      "claim_rate_missing": 0.0283,
+      "claim_rate_present": 0.0382,
+      "ratio": 0.7404
+    },
+    "ps_car_03_cat": {
+      "missing_rate": 0.6911,
+      "claim_rate_missing": 0.0328,
+      "claim_rate_present": 0.0447,
+      "ratio": 0.7334
+    },
+    "ps_car_02_cat": {
+      "missing_rate": 0.0,
+      "claim_rate_missing": 0.0,
+      "claim_rate_present": 0.0364,
+      "ratio": 0.0
+    },
+    "ps_car_11": {
+      "missing_rate": 0.0,
+      "claim_rate_missing": 0.0,
+      "claim_rate_present": 0.0364,
+      "ratio": 0.0
+    },
+    "ps_car_12": {
+      "missing_rate": 0.0,
+      "claim_rate_missing": NaN,
+      "claim_rate_present": 0.0364,
+      "ratio": NaN
+    }
+  },
+  "single_feature_auc_by_group": {
+    "calc": {
+      "mean": 0.5014,
+      "max": 0.5038
+    },
+    "car": {
+      "mean": 0.5232,
+      "max": 0.5759
+    },
+    "ind": {
+      "mean": 0.5164,
+      "max": 0.5444
+    },
+    "reg": {
+      "mean": 0.5457,
+      "max": 0.5512
+    }
+  },
+  "correlated_pairs": [
+    [
+      "ps_reg_02",
+      "ps_reg_03",
+      0.744
+    ],
+    [
+      "ps_car_12",
+      "ps_car_13",
+      0.672
+    ],
+    [
+      "ps_car_12",
+      "ps_car_14",
+      0.603
+    ],
+    [
+      "ps_car_13",
+      "ps_car_15",
+      0.53
+    ]
+  ],
+  "feature_experiments": {
+    "baseline (37 features)": {
+      "auc": 0.6411,
+      "gini": 0.2823,
+      "auprc": 0.0666,
+      "capture_5pct": 0.1263,
+      "delta_auc": 0.0
+    },
+    "+ missing indicators": {
+      "auc": 0.6408,
+      "gini": 0.2816,
+      "auprc": 0.0664,
+      "capture_5pct": 0.127,
+      "delta_auc": -0.0004
+    },
+    "+ target encoding": {
+      "auc": 0.6412,
+      "gini": 0.2824,
+      "auprc": 0.0668,
+      "capture_5pct": 0.1277,
+      "delta_auc": 0.0001
+    },
+    "+ pairwise products": {
+      "auc": 0.6402,
+      "gini": 0.2803,
+      "auprc": 0.0664,
+      "capture_5pct": 0.1268,
+      "delta_auc": -0.001
+    }
+  },
+  "n_final_features": 50,
+  "imbalance_experiments": {
+    "none": {
+      "auc": 0.6412,
+      "gini": 0.2824,
+      "auprc": 0.0668,
+      "capture_5pct": 0.1277,
+      "lift_5pct": 2.5549,
+      "mean_pred": 0.0364
+    },
+    "class weight": {
+      "auc": 0.6402,
+      "gini": 0.2805,
+      "auprc": 0.0662,
+      "capture_5pct": 0.1256,
+      "lift_5pct": 2.5111,
+      "mean_pred": 0.4622
+    },
+    "undersample": {
+      "auc": 0.6402,
+      "gini": 0.2803,
+      "auprc": 0.0658,
+      "capture_5pct": 0.1241,
+      "lift_5pct": 2.4823,
+      "mean_pred": 0.1615
+    },
+    "undersample + SMOTE": {
+      "auc": 0.6318,
+      "gini": 0.2635,
+      "auprc": 0.062,
+      "capture_5pct": 0.1153,
+      "lift_5pct": 2.306,
+      "mean_pred": 0.1782
+    }
+  },
+  "best_rounds": 678,
+  "tuning": {
+    "{'max_depth': 3, 'min_child_weight': 5}": {
+      "auc": 0.6397,
+      "gini": 0.2794,
+      "capture_5pct": 0.1272
+    },
+    "{'max_depth': 4, 'min_child_weight': 5}": {
+      "auc": 0.6403,
+      "gini": 0.2806,
+      "capture_5pct": 0.1277
+    },
+    "{'max_depth': 5, 'min_child_weight': 5}": {
+      "auc": 0.6385,
+      "gini": 0.2771,
+      "capture_5pct": 0.1238
+    },
+    "{'max_depth': 4, 'min_child_weight': 20}": {
+      "auc": 0.6404,
+      "gini": 0.2808,
+      "capture_5pct": 0.1279
+    }
+  },
+  "final_params": {
+    "n_estimators": 678,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 20,
+    "reg_lambda": 1.0,
+    "random_state": 42
+  },
+  "cv_final": {
+    "auc": 0.6419,
+    "gini": 0.2837,
+    "auprc": 0.0668,
+    "capture_5pct": 0.1268,
+    "lift_5pct": 2.5364,
+    "mean_pred": 0.0363
+  },
+  "cv_baseline": {
+    "auc": 0.6396,
+    "gini": 0.2791,
+    "auprc": 0.0662,
+    "capture_5pct": 0.1242,
+    "lift_5pct": 2.4834,
+    "mean_pred": 0.0364
+  },
+  "holdout": {
+    "auc": 0.6414,
+    "gini": 0.2828,
+    "auprc": 0.0686,
+    "capture_5pct": 0.1277,
+    "lift_5pct": 2.5536,
+    "mean_pred": 0.0365,
+    "capture_1pct": 0.0385,
+    "capture_10pct": 0.2169,
+    "capture_20pct": 0.3671
+  },
+  "decile_table": [
+    {
+      "decile": 1,
+      "policies": 11905,
+      "claim_rate": 0.0143,
+      "mean_pred": 0.014499999582767487,
+      "relative_risk": 0.3918,
+      "share_of_claims": 0.0392,
+      "premium_factor": 0.6
+    },
+    {
+      "decile": 2,
+      "policies": 11904,
+      "claim_rate": 0.0201,
+      "mean_pred": 0.019700000062584877,
+      "relative_risk": 0.5508,
+      "share_of_claims": 0.0551,
+      "premium_factor": 0.6889
+    },
+    {
+      "decile": 3,
+      "policies": 11904,
+      "claim_rate": 0.0207,
+      "mean_pred": 0.023399999365210533,
+      "relative_risk": 0.567,
+      "share_of_claims": 0.0567,
+      "premium_factor": 0.7778
+    },
+    {
+      "decile": 4,
+      "policies": 11904,
+      "claim_rate": 0.0285,
+      "mean_pred": 0.02669999934732914,
+      "relative_risk": 0.7813,
+      "share_of_claims": 0.0781,
+      "premium_factor": 0.8667
+    },
+    {
+      "decile": 5,
+      "policies": 11905,
+      "claim_rate": 0.0305,
+      "mean_pred": 0.03009999915957451,
+      "relative_risk": 0.8365,
+      "share_of_claims": 0.0837,
+      "premium_factor": 0.9556
+    },
+    {
+      "decile": 6,
+      "policies": 11904,
+      "claim_rate": 0.0343,
+      "mean_pred": 0.03370000049471855,
+      "relative_risk": 0.9403,
+      "share_of_claims": 0.094,
+      "premium_factor": 1.0444
+    },
+    {
+      "decile": 7,
+      "policies": 11904,
+      "claim_rate": 0.0384,
+      "mean_pred": 0.03799999877810478,
+      "relative_risk": 1.0533,
+      "share_of_claims": 0.1053,
+      "premium_factor": 1.1333
+    },
+    {
+      "decile": 8,
+      "policies": 11904,
+      "claim_rate": 0.044,
+      "mean_pred": 0.043699998408555984,
+      "relative_risk": 1.2077,
+      "share_of_claims": 0.1208,
+      "premium_factor": 1.2222
+    },
+    {
+      "decile": 9,
+      "policies": 11904,
+      "claim_rate": 0.0548,
+      "mean_pred": 0.05290000140666962,
+      "relative_risk": 1.5027,
+      "share_of_claims": 0.1503,
+      "premium_factor": 1.3111
+    },
+    {
+      "decile": 10,
+      "policies": 11905,
+      "claim_rate": 0.079,
+      "mean_pred": 0.0820000022649765,
+      "relative_risk": 2.1686,
+      "share_of_claims": 0.2169,
+      "premium_factor": 1.4
+    }
+  ],
+  "top_vs_bottom_decile_risk": 5.54,
+  "brief_capture_target": 0.65,
+  "brief_capture_gap": 0.5223,
+  "adversarial_auc": 0.5012,
+  "permutation_importance_top15": {
+    "ps_car_13": 0.01899,
+    "ps_ind_03": 0.01348,
+    "ps_ind_05_cat": 0.01031,
+    "ps_ind_15": 0.00535,
+    "ps_ind_17_bin": 0.00503,
+    "ps_car_07_cat": 0.00402,
+    "ps_reg_03": 0.00278,
+    "ps_car_01_cat": 0.00263,
+    "ps_reg_01": 0.00244,
+    "ps_ind_02_cat": 0.00242,
+    "ps_ind_06_bin": 0.0022,
+    "ps_ind_01": 0.00202,
+    "ps_ind_09_bin": 0.00188,
+    "ps_ind_04_cat": 0.00172,
+    "ps_car_09_cat": 0.00146
+  },
+  "car_cluster": [
+    "ps_car_12",
+    "ps_car_13",
+    "ps_car_14",
+    "ps_car_15",
+    "ps_reg_02",
+    "ps_reg_03"
+  ],
+  "car_cluster_block_importance": 0.03275,
+  "experiments": {
+    "baseline": {
+      "auc": 0.6396,
+      "gini": 0.2791,
+      "auprc": 0.0662,
+      "capture_5pct": 0.1242,
+      "lift_5pct": 2.4834,
+      "mean_pred": 0.0364
+    },
+    "drop calc group": {
+      "auc": 0.6411,
+      "gini": 0.2823,
+      "auprc": 0.0666,
+      "capture_5pct": 0.1263,
+      "lift_5pct": 2.5261,
+      "mean_pred": 0.0364,
+      "delta_auc": 0.0016
+    },
+    "final features": {
+      "auc": 0.6412,
+      "gini": 0.2824,
+      "auprc": 0.0668,
+      "capture_5pct": 0.1277,
+      "lift_5pct": 2.5549,
+      "mean_pred": 0.0364
+    },
+    "final (tuned, 5-fold CV)": {
+      "auc": 0.6419,
+      "gini": 0.2837,
+      "auprc": 0.0668,
+      "capture_5pct": 0.1268,
+      "lift_5pct": 2.5364,
+      "mean_pred": 0.0363
+    },
+    "logistic regression (naive)": {
+      "auc": 0.6193,
+      "gini": 0.2386,
+      "auprc": 0.0586,
+      "capture_5pct": 0.1091,
+      "lift_5pct": 2.1815,
+      "mean_pred": 0.0364
+    }
+  },
+  "cv_logistic": {
+    "auc": 0.6193,
+    "gini": 0.2386,
+    "auprc": 0.0586,
+    "capture_5pct": 0.1091,
+    "lift_5pct": 2.1815,
+    "mean_pred": 0.0364
+  }
+}
