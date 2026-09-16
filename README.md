@@ -8,6 +8,7 @@ End-to-end data science projects. Each folder is self-contained: a README that l
 |---|---|---|---|
 | [**rfm-customer-segmentation**](./rfm-customer-segmentation) | Which customers should a retailer spend retention budget on? | RFM, K-Means, DBSCAN, quartile scoring, SQL parity check | ✅ Complete |
 | [**Yelp-analysis**](./Yelp-analysis) | What can a merchant and a platform each do with the same review dataset? | Time-series aggregation, log-odds text contrast, keyword prevalence, stratified sampling | ✅ Complete |
+| [**insurance_claim_risk_ranking**](./insurance_claim_risk_ranking) | How much should each policyholder pay, given a 3.6% claim rate? | XGBoost, out-of-fold target encoding, imbalance and calibration experiments, permutation importance | ✅ Complete |
 | ab-testing | *coming soon* | Experiment design, power analysis, hypothesis testing | 🚧 |
 | recommender-system | *coming soon* | Collaborative filtering, ranking evaluation | 🚧 |
 
@@ -17,10 +18,13 @@ The top 20% of customers generate 75% of revenue and a third of the base has nev
 ### Yelp-analysis
 One dataset, three stakeholders, three answers. **Timing:** Friday 18:00 is the busiest hour of the week, and restaurants run two sharp peaks where every other business type sits on a flat 10-to-5 plateau — one staffing rule cannot serve both. **Text:** service is mentioned equally by 4.5-star and 2-star restaurants and therefore carries no signal; waiting and cleanliness are each about 3x more common in low-star tips. **Platform:** Elite is 4.6% of accounts writing 24% of reviews, and it selects a rating behaviour — reviewers who avoid both extremes — rather than louder enthusiasts.
 
+### insurance_claim_risk_ranking
+Predicting "no claim" for all 595K policies is 96.4% accurate and worthless, so the task is ranking rather than classification. A gradient boosted model reaches AUC 0.641 on a locked holdout against 0.619 for logistic regression; the top risk decile claims at 7.9% and the bottom at 1.4%, a 5.5x spread that supports the ±40% premium band the brief asked for. Two findings drive the design. Resampling — the reflex on a 26:1 dataset — left the ranking unchanged while pushing predicted claim rates to 4-13x the truth, so the model is trained on the real distribution and its probabilities are used directly for pricing. And the 65% top-5% capture rate in the original requirement is unreachable on these features at 12.8%, which is reported as a limit of the data rather than worked around.
+
 **Conventions used across projects**
 
 - README first sentence is the finding, not the method.
 - Every cleaning decision is logged with row counts and a reason.
-- Where two implementations exist (e.g. pandas and SQL), a test asserts they agree.
+- Evaluation is fixed before modelling, and anything fitted is fitted inside the training fold.
 - Method choice is justified against the obvious alternative, and each limitation is stated rather than left for the reader to find.
 - Raw data is never committed; each project links to its source.
