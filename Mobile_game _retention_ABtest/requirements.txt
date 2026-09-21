@@ -1,0 +1,10 @@
+# Validated on Python 3.12; direct dependencies pinned.
+numpy==2.3.5
+pandas==2.2.3
+scipy==1.17.0
+matplotlib==3.10.8
+ipython==9.17.1
+ipykernel==7.3.0
+notebook==7.6.2
+nbformat==5.11.1
+gdown==5.2.0
