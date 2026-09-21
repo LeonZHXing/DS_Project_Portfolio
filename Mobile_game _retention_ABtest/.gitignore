@@ -1,0 +1,25 @@
+# Downloaded datasets
+/Data/*
+!/Data/README.md
+!/Data/.gitkeep
+
+/data/*
+!/data/README.md
+!/data/.gitkeep
+
+# Python environments and cache
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary downloads and archives
+*.download
+*.zip
