@@ -6,11 +6,11 @@ End-to-end data science projects. Each folder is self-contained: a README that l
 
 | Project | Question | Methods | Status |
 |---|---|---|---|
-| [**rfm_customer_segmentation**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/rfm-customer-segmentation) | Which customers should a retailer spend retention budget on? | RFM, K-Means, DBSCAN, quartile scoring, SQL parity check | ✅ Complete |
-| [**yelp_analysis**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/Yelp-analysis) | What can a merchant and a platform each do with the same review dataset? | Time-series aggregation, log-odds text contrast, keyword prevalence, stratified sampling | ✅ Complete |
-| [**insurance_claim_risk_ranking**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/Insurance_claim_risk_ranking) | How much should each policyholder pay, given a 3.6% claim rate? | XGBoost, out-of-fold target encoding, imbalance and calibration experiments, permutation importance | ✅ Complete |
-| [**mobile_game_retention_abtest**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/Mobile_game_retention_ABtest) | Does moving the first progression gate from level 30 to level 40 improve player retention? | SRM diagnostic, two-proportion z-test, confidence intervals, bootstrap, Welch's t-test, SQL parity check | ✅ Complete |
-| recommender-system | *coming soon* | Collaborative filtering, ranking evaluation | 🚧 |
+| [**rfm_customer_segmentation**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/rfm_customer_segmentation) | Which customers should a retailer spend retention budget on? | RFM, K-Means, DBSCAN, quartile scoring, SQL parity check | ✅ Complete |
+| [**yelp_analysis**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/yelp_analysis) | What can a merchant and a platform each do with the same review dataset? | Time-series aggregation, log-odds text contrast, keyword prevalence, stratified sampling | ✅ Complete |
+| [**insurance_claim_risk_ranking**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/insurance_claim_risk_ranking) | How much should each policyholder pay, given a 3.6% claim rate? | XGBoost, out-of-fold target encoding, imbalance and calibration experiments, permutation importance | ✅ Complete |
+| [**mobile_game_retention_abtest**](https://github.com/LeonZHXing/DS_Project_Portfolio/tree/main/mobile_game_retention_abtest) | Does moving the first progression gate from level 30 to level 40 improve player retention? | SRM diagnostic, two-proportion z-test, confidence intervals, bootstrap, Welch's t-test, SQL parity check | ✅ Complete |
+| recommender_system | *coming soon* | Collaborative filtering, ranking evaluation | 🚧 |
 
 ### rfm_customer_segmentation
 
